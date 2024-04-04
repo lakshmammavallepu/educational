@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational webpage</title>
+    <link rel="stylesheet" href="educational webpage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a href=""><img src="./logo.png " alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="#Courses">COURSES</a></li>
+                <li><a href="#Contact us">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>Join Now</p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+    </div>
+    </section>
+    <!----Course-->
+    <section class="Courses">
+        <h1>Courses We Offer</h1>
+        <div class="row">
+            <div class="courses-col">
+                <h3>HTML,CSS,JavaScript</h3>
+                <p>HTML,CSS,and JavaScript are the building blocks of nearly every website you've ever visited,and they are crucial to understanding how websites are built. </p>
+            </div>
+            <div class="courses-col">
+                <h3>Python</h3>
+                <p>Python is Commonly used for Software,task automation,data analysis,and data visualisation.it is easy to learn </p>
+            </div>
+            <div class="courses-col">
+                <h3>C</h3>
+                <p>Building Databases.Programmers can use C to build database management systems,which are software to organize,store,retrive .</p>
+            </div>
+        </div>
+    </section>
+    <!----Call to action-->
+    
+    <section class="cta">
+        <h1>Enroll For Our Various Online Courses <br>Anywhere From The World</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+        
+    </section>
+
+    <!---Footer-->
+    <section class="footer">
+        <h4>All Rights  Reserved</h4>
+        
+    </section>
+    <!---- javascript for toggle menu---->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
